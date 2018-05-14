@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<script src="${pageContext.request.contextPath}/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
  $(function(){
@@ -19,10 +19,10 @@
 </script>
 <div class="container-fluid">
 	<div class="col-md-4">
-		<img src="${pageContext.request.contextPath}/img/logo2.png" />
+		<img src="img/logo2.png" />
 	</div>
 	<div class="col-md-5">
-		<img src="${pageContext.request.contextPath}/img/header.png" />
+		<img src="img/header.png" />
 	</div>
 	<div class="col-md-3" style="padding-top: 20px">
 		<ol class="list-inline">
