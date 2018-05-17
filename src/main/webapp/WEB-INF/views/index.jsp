@@ -41,19 +41,19 @@
 					<!-- Wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img src="${pageContext.request.contextPath}/img/ad/1.jpg">
+							<img src="img/ad/1.jpg">
 							<div class="carousel-caption">
 
 							</div>
 						</div>
 						<div class="item">
-							<img src="${pageContext.request.contextPath}/img/ad/2.jpg">
+							<img src="img/ad/2.jpg">
 							<div class="carousel-caption">
 
 							</div>
 						</div>
 						<div class="item">
-							<img src="${pageContext.request.contextPath}/img/ad/3.jpg">
+							<img src="img/ad/3.jpg">
 							<div class="carousel-caption">
 
 							</div>
@@ -77,7 +77,7 @@
             -->
 			<div class="container-fluid">
 				<div class="col-md-12">
-					<h2>热门商品&nbsp;&nbsp;<img src="${pageContext.request.contextPath}/img/title2.jpg"/></h2>
+					<h2>热门商品&nbsp;&nbsp;<img src="img/title2.jpg"/></h2>
 				</div>
 				<div class="col-md-2" style="border:1px solid #E7E7E7;border-right:0;padding:0;">
 					<img src="products/hao/big01.jpg" width="205" height="404" style="display: inline-block;"/>
@@ -90,7 +90,7 @@
 					</div>
 				   <c:forEach items="${hlist }" var="h">
 					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
-						<a href="${pageContext.request.contextPath }/ProductServlet?method=findByid&pid=${h.pid}">
+						<a href="findProByID?id=${h.pid}">
 							<img src="${pageContext.request.contextPath }/${h.pimage}" width="130" height="130" style="display: inline-block;">
 						</a>
 						<p><a href="product_info.html" style='color:#666'>${h.pname }</a></p>
