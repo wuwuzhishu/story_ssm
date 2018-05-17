@@ -10,5 +10,10 @@
   		user 
   	value(#{uid},#{username},#{password})
   </insert>
+  <select id="queryUserByNameAndPwd" parameterType="User" resultType="User">
+  	select * 
+  	from user 
+  	where username=#{username} and password=#{password}
+  </select>
 
 </mapper>

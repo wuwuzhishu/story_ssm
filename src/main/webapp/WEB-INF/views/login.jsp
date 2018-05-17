@@ -61,8 +61,8 @@ font {
 				<font>会员登录</font>USER LOGIN
 
 				<div>&nbsp;</div>
-<form class="form-horizontal"  method="post" action="${pageContext.request.contextPath }/UserServlet">
-  <input type="hidden" name="method" value="login">
+<form class="form-horizontal"  method="post" action="login">
+  <!--<input type="hidden" name="method" value="login">  -->
  <div class="form-group">
     <label for="username" class="col-sm-2 control-label">用户名</label>
     <div class="col-sm-6">

@@ -16,5 +16,13 @@ public class UserService {
 		// TODO Auto-generated method stub
 		return userMapper.insertUser(user);
 	}
+
+	public User getUserByNameAndPwd(String username, String password) {
+		// TODO Auto-generated method stub
+		User user= new User();
+		user.setUsername(username);
+		user.setPassword(password);
+		return userMapper.queryUserByNameAndPwd(user);
+	}
 	
 }

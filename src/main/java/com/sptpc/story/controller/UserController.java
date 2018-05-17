@@ -17,8 +17,7 @@ public class UserController {
 	
 	@RequestMapping(value="reg",method=RequestMethod.GET)
 	public ModelAndView register(){
-		ModelAndView mv = new ModelAndView("register");
-		
+		ModelAndView mv = new ModelAndView("register");		
 		return mv;
 		
 	}
@@ -29,6 +28,26 @@ public class UserController {
 		int n = userService.register(user);
 		if(n != 0){
 			mv = new ModelAndView("index");
+		}
+		return mv;
+	}
+	
+	@RequestMapping(value="login",method=RequestMethod.GET)
+	public ModelAndView login(){
+		ModelAndView mv = new ModelAndView("login");
+		return mv;
+		
+	}
+	
+	@RequestMapping(value="login",method=RequestMethod.POST)
+	public ModelAndView loginForm(String username,String password){
+		ModelAndView mv = new ModelAndView("login");
+		User user = userService.getUserByNameAndPwd(username, password);
+		if(user != null){			
+			mv = new ModelAndView("index");
+			mv.addObject("user", user);
+		}else{
+			mv.addObject("msg", "用户名或密码错误");
 		}
 		return mv;
 	}

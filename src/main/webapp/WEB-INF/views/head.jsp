@@ -32,7 +32,7 @@
 
 			<c:if test="${empty user}">
 
-				<li><a href="${pageContext.request.contextPath}/UserServlet?method=loginUI">登录</a></li>
+				<li><a href="login">登录</a></li>
 				<li><a
 					href="reg">注册</a></li>
 			</c:if>
