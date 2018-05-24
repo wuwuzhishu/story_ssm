@@ -112,7 +112,7 @@
             -->
 			<div class="container-fluid">
 				<div class="col-md-12">
-					<h2>最新商品&nbsp;&nbsp;<img src="${pageContext.request.contextPath}/img/title2.jpg"/></h2>
+					<h2>最新商品&nbsp;&nbsp;<img src="img/title2.jpg"/></h2>
 				</div>
 				<div class="col-md-2" style="border:1px solid #E7E7E7;border-right:0;padding:0;">
 					<img src="products/hao/big02.jpg" width="205" height="404" style="display: inline-block;"/>
@@ -125,7 +125,7 @@
 					</div>
 				   <c:forEach items="${nlist }" var="n">
 					<div class="col-md-2" style="text-align:center;height:200px;padding:10px 0px;">
-						<a href="${pageContext.request.contextPath }/ProductServlet?method=findByid&pid=${n.pid}">
+						<a href="findProByID?id=${n.pid}">
 							<img src="${pageContext.request.contextPath }/${n.pimage}" width="130" height="130" style="display: inline-block;">
 						</a>
 						<p><a href="product_info.html" style='color:#666'>${n.pname }</a></p>
@@ -140,7 +140,7 @@
             -->
 			<div class="container-fluid">
 				<div style="margin-top:50px;">
-					<img src="${pageContext.request.contextPath}/img/footer.jpg" width="100%" height="78" alt="我们的优势" title="我们的优势" />
+					<img src="img/footer.jpg" width="100%" height="78" alt="我们的优势" title="我们的优势" />
 				</div>
 		
 				<div style="text-align: center;margin-top: 5px;">

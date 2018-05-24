@@ -37,7 +37,7 @@ public class HomeController {
 		List<Product> hList = productService.getHotProducts();
 		List<Product> nList = productService.getNewProducts();
 		model.addAttribute("hlist", hList);
-		model.addAttribute("nlist", nList);
+		model.addAttribute("nlist", nList);		
 		return "index";
 	}
 //	public ModelAndView home(){

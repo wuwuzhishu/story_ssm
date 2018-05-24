@@ -39,7 +39,7 @@
 			<c:if test="${not empty user}">
 				<li><a>欢迎:${user.username }</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/UserServlet?method=quitvate">退出</a></li>
+					href="logout">退出</a></li>
 				<li><a
 					href="${pageContext.request.contextPath}/OrdersServlet?method=orderlist">已购买商品</a></li>
 			</c:if>

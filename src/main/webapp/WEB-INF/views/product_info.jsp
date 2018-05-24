@@ -49,7 +49,7 @@
 					
 					
 					
-                    <form action="${pageContext.request.contextPath }/OrdersServlet" method="post">
+                    <form action="order" method="post">
 					 <!-- 隐藏域 -->
 					<input type="hidden" name="method" value="buyProducts">
 					<input type="hidden" name="oname" value="${product.pname }">
