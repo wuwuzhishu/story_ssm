@@ -50,7 +50,7 @@ CREATE TABLE `orders` (
   `oimage` varchar(200) DEFAULT NULL,
   `oprice` double DEFAULT NULL,
   `ocount` int(11) DEFAULT NULL,
-  `ordertime` bigint(20) DEFAULT NULL
+  `ordertime` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
